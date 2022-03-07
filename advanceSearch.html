@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CS50W Project 0</title>
+</head>
+<body>
+    <div class="navigation">
+        <a href="index.html" class="nav_link">Search</a>
+        <a href="advanceSearch.html" class="nav_link">Advanced</a>
+    </div>
+    <div class="logo">
+        <h1><span class="blue">G</span><span class="orange">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="orange">e</span><span style="color: lightblue; font-size: x-small; ">Advanced Search</span></h1>
+    </div>
+	<form action="https://www.google.com/search" class="adv_form">
+        <div class="adv_input_form">
+            <div class="criteria" style="margin-bottom: 0.5vmin;"><h3 style="font-size: 120%; margin-bottom: 0.5vmin; text-decoration: none; color: darkolivegreen">Find pages with ....</h3></div>
+            <div class="criteria">
+                <label for="all_words">all these words:</label>
+                <input id="all_words" type="text" name="as_q" class="adv_search">
+            </div>
+            <div class="criteria">
+                <label for="exact_words">this exact words or phrase:</label>
+                <input id="exact_words" type="text" name="as_epq" class="adv_search">
+            </div>
+            <div class="criteria">
+                <label for="any_words">any of these words:</label>
+                <input id="any_words" type="text" name="as_oq" class="adv_search">
+            </div>
+            <div class="criteria">
+                <label for="without_words">none of these words:</label>
+                <input id="without_words" type="text" name="as_eq" class="adv_search">
+            </div>
+        </div>
+        <div class="submit_buttons">
+            <input type="submit" value="Advanced Search">
+        </div>
+
+	</form>
+</body>
+</html>
